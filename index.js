@@ -13,10 +13,10 @@ const cors = require('cors')
 // db setup
 mongoose.connect('mongodb://localhost:auth/auth')
 
-// App Setup
-app.use(morgan('combined')) // middleware
+// App Setup (mostly middleware)
+app.use(morgan('combined'))
 app.use(cors())
-app.use(bodyParser.json({ type: '*/*' })) // middleware
+app.use(bodyParser.json({ type: '*/*' }))
 router(app)
 
 // Server Setup
