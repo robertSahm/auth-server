@@ -1,0 +1,5 @@
+# Authentication Server
+
+```
+  > npm start
+```
